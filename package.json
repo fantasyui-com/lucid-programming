@@ -1,6 +1,6 @@
 {
   "name": "leopard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple, fast and minimalist programming language for programming via SMS, MUD, IRC, etc.",
   "main": "index.js",
   "scripts": {
