@@ -1,2 +1,4 @@
 
-@pizza-bot Order Large Hawaiian with Cajun  
+
+
+@pizza-bot Order [Large], [Hawaiian], with [Cajun] Crust.  
