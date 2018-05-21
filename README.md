@@ -11,3 +11,5 @@ Lucid Programming aims to be a stateless, variable free, action execution langua
 
 Lucid Programming hopes to support data pipes via Apple Automator like concept, where
 one line may send data to the next. This may allow basic variable-like declarations.
+
+Note that, any and all type of advanced programming will take the Marko approach.
