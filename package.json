@@ -1,5 +1,5 @@
 {
-  "name": "leopard",
+  "name": "lucid-programming",
   "version": "1.2.0",
   "description": "Simple, fast and minimalist programming language for programming via SMS, MUD, IRC, etc.",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fantasyui-com/leopard.git"
+    "url": "git+https://github.com/fantasyui-com/lucid-programming.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fantasyui-com/leopard/issues"
+    "url": "https://github.com/fantasyui-com/lucid-programming/issues"
   },
-  "homepage": "https://github.com/fantasyui-com/leopard#readme"
+  "homepage": "https://github.com/fantasyui-com/lucid-programming#readme"
 }
