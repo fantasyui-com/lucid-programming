@@ -1,33 +1,27 @@
 const lucid = require('./index.js')({});
 
 const pieType   = [
-  {name: 'Junior', price:2, },
-  {name: 'Small', price:2, },
-  {name: 'Large', price:2, },
-  {name: 'New York', price:2, },
-  {name: 'Large New York', price:2, },
+  {type:'value', key:'pieType', text: 'Junior', price:200, },
+  {type:'value', key:'pieType', text: 'Small', price:200, },
+  {type:'value', key:'pieType', text: 'Large', price:200, },
+  {type:'value', key:'pieType', text: 'New York', price:200, },
+  {type:'value', key:'pieType', text: 'Large New York', price:200, },
 ];
 
 const pizzaType = [
-  {name: 'Cheese', price:500, },
-  {name: 'Pepperoni', price:600, },
-  {name: 'Hawaiian', price:10000, },
+  {type:'value', key:'pizzaType', text: 'Cheese', price:500, },
+  {type:'value', key:'pizzaType', text: 'Pepperoni', price:600, },
+  {type:'value', key:'pizzaType', text: 'Hawaiian', price:10000, },
 ];
 
 const crustType = [
-  {name: 'Ranch', price:100 },
-  {name: 'Cajun', price:100 },
-  {name: 'Asiago', price:100 }
+  {type:'value', key:'crustType', text: 'Ranch', price:100 },
+  {type:'value', key:'crustType', text: 'Cajun', price:100 },
+  {type:'value', key:'crustType', text: 'Asiago', price:100 }
 ];
 
-let db = lucid.registration({ name:'Pizza Order', pattern:['Order', pieType, pizzaType, 'with', crustType, 'Crust.'] });
-
-//let db = lucid.registration({ name:'ORDER', pattern:['A', [{name: '1'}, {name: '2'}, {name: '3'} ], ' O ', [{name: 'X'}, {name: 'Y'}, {name: 'Z'} ] ]});
+let db = lucid.registration({ text:'Pizza Order', pattern:[{type:'text', text: 'Order'}, pieType, pizzaType, {type:'text', text: 'with'}, crustType, {type:'text', text: 'crust.'} ] });
 
 
-db.forEach(function(i){
-  
-  console.log(i.join(' '));
-
-})
-// lucid.recognition('@pizza-bot Order [Large], [Hawaiian], with [Cajun] Crust.')
+const recognized = lucid.recognition('Order Large New York Cheese with Asiago crust.');
+console.log( recognized );
