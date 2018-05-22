@@ -24,12 +24,16 @@ Because we are using pre-defined key-names, the following is the matching functi
 
 ```
 
+Usage
+
 ```JavaScript
 
   const recognized = lucid.recognition('Order Large New York Cheese with Asiago crust.');
   assert.deepStrictEqual({ pieType: 'Large New York', price: 800, pizzaType: 'Cheese', crustType: 'Asiago' }, recognized);
 
 ```
+
+Response
 
 ```JSON
 
