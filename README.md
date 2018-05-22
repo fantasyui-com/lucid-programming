@@ -51,7 +51,7 @@ Response
 ```JavaScript
 
   db = lucid.registration({
-    text: 'Hello World',
+    text: 'Goodbye World',
     pattern: [
       { type: 'text', text: 'Launch rocket' },
       [
