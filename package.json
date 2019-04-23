@@ -1,6 +1,6 @@
 {
   "name": "lucid-programming",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Simple, fast and minimalist programming language for programming via SMS, MUD, IRC, etc.",
   "main": "index.js",
   "scripts": {
